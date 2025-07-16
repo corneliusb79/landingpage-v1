@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kaisei+Tokumin:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :target {
+        scroll-margin-top: 5rem;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body class="text-stone-700 font-[Inter] bg-amber-50">
+    <header
+      class="flex items-center justify-between bg-black/5 fixed top-0 w-full h-20 backdrop-blur-xs px-8 gap-4"
+    >
+      <a href="/"><img src="SM_CD.png" alt="" height="50" width="140" /></a>
+      <nav class="flex gap-4">
+        <a href="/#about-me" class="font-light uppercase text-sm"> About me</a>
+      </nav>
+      <button
+        class="bg-emerald-700 py-2 px-3 rounded text-amber-50 text-sm transition hover:bg-emerald-800"
+      >
+        Contact me
+      </button>
+    </header>
+    <div class="h-20"></div>
+    <section
+      class="flex flex-col md:flex-row gap-8 md:gap-4 p-4 container mx-auto my-30"
+      id="hero"
+    >
+      <div class="flex-1 space-y-8">
+        <div class="flex gap-1 items-end mb-4">
+          <p class="font-[Kaisei_Tokumin] text-emerald-800">SM</p>
+          <p class="uppercase tracking-widest font-light">UI/UX Designer</p>
+        </div>
+        <h1 class="text-4xl font-[Kaisei_Tokumin] font-bold">Hi, I'm Su May</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi fugit
+          sapiente porro atque assumenda exercitationem modi officia qui et
+          tenetur ullam eaque velit quia officiis doloribus cumque, illum
+          laboriosam impedit.
+        </p>
+        <div class="flex gap-6">
+          <button
+            class="bg-emerald-700 py-1 px-2 rounded text-amber-50 text-sm transition hover:bg-emerald-800"
+          >
+            Contact me
+          </button>
+          <button
+            class="border-2 border-emerald-700 py-1 px-2 rounded text-emerald-700 text-sm transition hover:bg-green-50"
+          >
+            Check out my Portfolio
+          </button>
+        </div>
+      </div>
+      <div class="flex-1">
+        <img src="./Susi.jpg" alt="" />
+      </div>
+    </section>
+    <section class="bg-orange-100" id="about-me">
+      <div class="container mx-auto py-30 md:py-50 lg:py-80 space-y-8 p-4">
+        <div class="flex gap-1 items-end mb-4">
+          <p class="font-[Kaisei_Tokumin] text-emerald-800">SM</p>
+          <p class="uppercase tracking-widest font-light">About me</p>
+        </div>
+        <h2 class="text-3xl font-[Kaisei_Tokumin]">
+          Making your <span class="text-emerald-700">visions</span> come to life
+        </h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta nemo
+          totam unde sequi eius eum ut facilis esse? Perspiciatis itaque
+          aspernatur nisi culpa deleniti rem adipisci ab corporis pariatur
+          dignissimos!
+        </p>
+        <div class="flex flex-col md:flex-row gap-6 md:gap-4">
+          <div class="flex-1 space-y-1">
+            <p class="text-emerald-900 font-[Kaisei_Tokumin]">Headline 1</p>
+            <p class="text-sm">Description 1</p>
+          </div>
+          <div class="flex-1 space-y-1">
+            <p class="text-emerald-900 font-[Kaisei_Tokumin]">Headline 2</p>
+            <p class="text-sm">Description 2</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
