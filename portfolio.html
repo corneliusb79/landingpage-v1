@@ -16,16 +16,22 @@
     <header
       class="flex items-center justify-between bg-black/5 fixed top-0 w-full h-20 backdrop-blur-xs px-8 gap-4"
     >
-      <a href="/landingpage-v1"><img src="SM_CD.png" alt="" height="50" width="140" /></a>
+      <a href="/landingpage-v1"
+        ><img src="SM_CD.png" alt="" height="50" width="140" />
+      </a>
       <nav class="flex gap-4">
+        <a href="/landingpage-v1/#about-me" class="font-light uppercase text-sm"
+          >About me</a
+        >
         <a
-          href="/landingpage-v1/#about-me"
+          href="/landingpage-v1/portfolio.html"
           class="font-light uppercase text-sm"
-        >
-          About me</a
-        >
-        <a href="/landingpage-v1/portfolio.html" class="font-light uppercase text-sm"
           >Portfolio</a
+        >
+        <a
+          href="/landingpage-v1/services.html"
+          class="font-light uppercase text-sm"
+          >Services</a
         >
       </nav>
       <button
@@ -35,7 +41,10 @@
       </button>
     </header>
     <div class="h-20"></div>
-    <section class="container mx-auto text-center mt-8 md:mt-16 space-y-2">
+    <section
+      class="container mx-auto text-center mt-8 md:mt-16 space-y-2"
+      id:hero
+    >
       <h1 class="uppercase text-emerald-800">Portfolio</h1>
       <h2 class="text-3xl font-[Kaisei_Tokumin]">
         Recent <span class="text-emerald-700">Projects</span>
@@ -46,123 +55,133 @@
         harum molestias eligendi magni.
       </p>
     </section>
-    <div class="flex flex-wrap justify-center gap-8 pt-12">
-      <button class="hover:text-emerald-700 font-medium">All Projects</button>
-      <button class="hover:text-emerald-700 font-medium">Web Design</button>
-      <button class="hover:text-emerald-700 font-medium">Branding</button>
-      <button class="hover:text-emerald-700 font-medium">Apps</button>
-      <button class="hover:text-emerald-700 font-medium">Software</button>
-    </div>
-    <section class="container mx-auto space-y-4">
-      <div
-        class="flex flex-col md:flex-row gap-8 md:gap-4 p-4 rounded shadow-xl bg-linear-to-r from-amber-700 to-amber-500 mt-8 md:mt-16"
-      >
-        <div class="flex-1 space-y-4">
-          <p class="tracking-widest font-medium text-emerald-50 text-a">
-            Web Design, Branding
-          </p>
-          <h2 class="font-[Kaisei_Tokumin] text-3xl text-amber-50">InnoPeak</h2>
-          <p class="text-amber-50">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
-            aspernatur voluptatem, error cum maxime libero unde voluptas impedit
-            eligendi nihil laudantium sequi totam sit quibusdam facere a. Quis,
-            aperiam tenetur.
-          </p>
-        </div>
-        <div class="flex-1">
-          <img src="InnoPeak.png" alt="" />
-        </div>
-      </div>
-    </section>
 
-    <section class="container mx-auto space-y-4">
-      <div
-        class="flex flex-col md:flex-row gap-8 md:gap-4 p-4 rounded shadow-xl bg-linear-to-r from-violet-700 to-violet-500 mt-8 md:mt-16"
-      >
-        <div class="flex-1 space-y-4">
-          <p class="tracking-widest font-medium text-emerald-50 text-a">
-            Web Design
-          </p>
-          <h2 class="font-[Kaisei_Tokumin] text-3xl text-amber-50">Jenyus</h2>
-          <p class="text-amber-50">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
-            aspernatur voluptatem, error cum maxime libero unde voluptas impedit
-            eligendi nihil laudantium sequi totam sit quibusdam facere a. Quis,
-            aperiam tenetur.
-          </p>
-        </div>
-        <div class="flex-1">
-          <img src="Jenyus.png" alt="" />
-        </div>
+    <section class="p-4" id="projects">
+      <div class="flex flex-wrap justify-center gap-8 pt-12">
+        <button class="hover:text-emerald-700 font-medium">All Projects</button>
+        <button class="hover:text-emerald-700 font-medium">Web Design</button>
+        <button class="hover:text-emerald-700 font-medium">Branding</button>
+        <button class="hover:text-emerald-700 font-medium">Apps</button>
+        <button class="hover:text-emerald-700 font-medium">Software</button>
       </div>
-    </section>
-    <section class="container mx-auto space-y-4">
-      <div
-        class="flex flex-col md:flex-row gap-8 md:gap-4 p-4 rounded shadow-xl bg-linear-to-r from-emerald-700 to-emerald-500 mt-8 md:mt-16"
-      >
-        <div class="flex-1 space-y-4">
-          <p class="tracking-widest font-medium text-emerald-50 text-a">
-            SaaS, Web Design, Software, Branding
-          </p>
-          <h2 class="font-[Kaisei_Tokumin] text-3xl text-amber-50">Finly</h2>
-          <p class="text-amber-50">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
-            aspernatur voluptatem, error cum maxime libero unde voluptas impedit
-            eligendi nihil laudantium sequi totam sit quibusdam facere a. Quis,
-            aperiam tenetur.
-          </p>
+      <section class="container mx-auto space-y-4">
+        <div
+          class="flex flex-col md:flex-row gap-8 md:gap-4 p-4 rounded shadow-xl bg-linear-to-r from-amber-700 to-amber-500 mt-8 md:mt-16"
+        >
+          <div class="flex-1 space-y-4">
+            <p class="tracking-widest font-medium text-emerald-50 text-a">
+              Web Design, Branding
+            </p>
+            <h3 class="font-[Kaisei_Tokumin] text-3xl text-amber-50">
+              InnoPeak
+            </h3>
+            <p class="text-amber-50">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
+              aspernatur voluptatem, error cum maxime libero unde voluptas
+              impedit eligendi nihil laudantium sequi totam sit quibusdam facere
+              a. Quis, aperiam tenetur.
+            </p>
+          </div>
+          <div class="flex-1">
+            <img src="InnoPeak.png" alt="" />
+          </div>
         </div>
-        <div class="flex-1">
-          <img src="Finly.png" alt="" />
+      </section>
+
+      <section class="container mx-auto space-y-4">
+        <div
+          class="flex flex-col md:flex-row gap-8 md:gap-4 p-4 rounded shadow-xl bg-linear-to-r from-violet-700 to-violet-500 mt-8 md:mt-16"
+        >
+          <div class="flex-1 space-y-4">
+            <p class="tracking-widest font-medium text-emerald-50 text-a">
+              Web Design
+            </p>
+            <h3 class="font-[Kaisei_Tokumin] text-3xl text-amber-50">Jenyus</h3>
+            <p class="text-amber-50">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
+              aspernatur voluptatem, error cum maxime libero unde voluptas
+              impedit eligendi nihil laudantium sequi totam sit quibusdam facere
+              a. Quis, aperiam tenetur.
+            </p>
+          </div>
+          <div class="flex-1">
+            <img src="Jenyus.png" alt="" />
+          </div>
         </div>
-      </div>
-    </section>
-    <section class="container mx-auto space-y-4">
-      <div
-        class="flex flex-col md:flex-row gap-8 md:gap-4 p-4 rounded shadow-xl bg-linear-to-r from-yellow-700 to-yellow-500 mt-8 md:mt-16"
-      >
-        <div class="flex-1 space-y-4">
-          <p class="tracking-widest font-medium text-emerald-50 text-a">
-            Web Design, Branding
-          </p>
-          <h2 class="font-[Kaisei_Tokumin] text-3xl text-amber-50">Dikurium</h2>
-          <p class="text-amber-50">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
-            aspernatur voluptatem, error cum maxime libero unde voluptas impedit
-            eligendi nihil laudantium sequi totam sit quibusdam facere a. Quis,
-            aperiam tenetur.
-          </p>
+      </section>
+      <section class="container mx-auto space-y-4">
+        <div
+          class="flex flex-col md:flex-row gap-8 md:gap-4 p-4 rounded shadow-xl bg-linear-to-r from-emerald-700 to-emerald-500 mt-8 md:mt-16"
+        >
+          <div class="flex-1 space-y-4">
+            <p class="tracking-widest font-medium text-emerald-50 text-a">
+              SaaS, Web Design, Software, Branding
+            </p>
+            <h3 class="font-[Kaisei_Tokumin] text-3xl text-amber-50">Finly</h3>
+            <p class="text-amber-50">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
+              aspernatur voluptatem, error cum maxime libero unde voluptas
+              impedit eligendi nihil laudantium sequi totam sit quibusdam facere
+              a. Quis, aperiam tenetur.
+            </p>
+          </div>
+          <div class="flex-1">
+            <img src="Finly.png" alt="" />
+          </div>
         </div>
-        <div class="flex-1">
-          <img src="Dikurium.png" alt="" />
+      </section>
+      <section class="container mx-auto space-y-4">
+        <div
+          class="flex flex-col md:flex-row gap-8 md:gap-4 p-4 rounded shadow-xl bg-linear-to-r from-yellow-700 to-yellow-500 mt-8 md:mt-16"
+        >
+          <div class="flex-1 space-y-4">
+            <p class="tracking-widest font-medium text-emerald-50 text-a">
+              Web Design, Branding
+            </p>
+            <h3 class="font-[Kaisei_Tokumin] text-3xl text-amber-50">
+              Dikurium
+            </h3>
+            <p class="text-amber-50">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
+              aspernatur voluptatem, error cum maxime libero unde voluptas
+              impedit eligendi nihil laudantium sequi totam sit quibusdam facere
+              a. Quis, aperiam tenetur.
+            </p>
+          </div>
+          <div class="flex-1">
+            <img src="Dikurium.png" alt="" />
+          </div>
         </div>
-      </div>
-    </section>
-    <section class="container mx-auto space-y-4">
-      <div
-        class="flex flex-col md:flex-row gap-8 md:gap-4 p-4 rounded shadow-xl bg-linear-to-r from-sky-700 to-sky-500 mt-8 md:mt-16"
-      >
-        <div class="flex-1 space-y-4">
-          <p class="tracking-widest font-medium text-emerald-50 text-a">
-            Web Design, Branding
-          </p>
-          <h2 class="font-[Kaisei_Tokumin] text-3xl text-amber-50">
-            RaviAnand Mohabir
-          </h2>
-          <p class="text-amber-50">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
-            aspernatur voluptatem, error cum maxime libero unde voluptas impedit
-            eligendi nihil laudantium sequi totam sit quibusdam facere a. Quis,
-            aperiam tenetur.
-          </p>
+      </section>
+      <section class="container mx-auto space-y-4">
+        <div
+          class="flex flex-col md:flex-row gap-8 md:gap-4 p-4 rounded shadow-xl bg-linear-to-r from-sky-700 to-sky-500 mt-8 md:mt-16"
+        >
+          <div class="flex-1 space-y-4">
+            <p class="tracking-widest font-medium text-emerald-50 text-a">
+              Web Design, Branding
+            </p>
+            <h3 class="font-[Kaisei_Tokumin] text-3xl text-amber-50">
+              RaviAnand Mohabir
+            </h3>
+            <p class="text-amber-50">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
+              aspernatur voluptatem, error cum maxime libero unde voluptas
+              impedit eligendi nihil laudantium sequi totam sit quibusdam facere
+              a. Quis, aperiam tenetur.
+            </p>
+          </div>
+          <div class="flex-1">
+            <img src="RaviAnand.png" alt="" />
+          </div>
         </div>
-        <div class="flex-1">
-          <img src="RaviAnand.png" alt="" />
-        </div>
-      </div>
+      </section>
     </section>
     <footer class="bg-orange-100/50 p-16">
-       <p class="container mx-auto">© 2025, Sushmita Mohabir. All rights reserved. Designed and developed with &lt;3 and attention to detail.</p>
+      <p class="container mx-auto">
+        © 2025, Sushmita Mohabir. All rights reserved. Designed and developed
+        with &lt;3 and attention to detail.
+      </p>
     </footer>
   </body>
 </html>
