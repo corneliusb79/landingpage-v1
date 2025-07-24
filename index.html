@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+      @custom-variant dark (&:where(.dark, .dark *));
+    </style>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -65,7 +68,9 @@
     </style>
     <title>Su May</title>
   </head>
-  <body class="text-stone-700 font-[Inter] bg-amber-50">
+  <body
+    class="text-stone-700 dark:text-amber-50 font-[Inter] bg-amber-50 dark:bg-stone-950"
+  >
     <header
       class="flex items-center justify-between bg-black/5 fixed top-0 w-full h-20 backdrop-blur-xs px-8 gap-4"
     >
@@ -84,11 +89,20 @@
           >Services</a
         >
       </nav>
-      <a
-        href="/landingpage-v1/contact.html"
-        class="bg-emerald-700 py-2 px-3 rounded text-amber-50 text-sm transition hover:bg-emerald-800"
-        >Contact me</a
-      >
+      <div class="flex items-center gap-12">
+        <button
+          class="p-2 bg-emerald-700 rounded-full text-amber-50 hover:bg-emerald-800 cursor-pointer"
+          id="color-mode-toggle"
+        >
+          <i data-lucide="sun" class="h-5 w-5 hidden dark:inline"></i>
+          <i data-lucide="moon" class="h-5 w-5 inline dark:hidden"></i>
+        </button>
+        <a
+          href="/landingpage-v1/contact.html"
+          class="bg-emerald-700 py-2 px-3 rounded text-amber-50 text-sm transition hover:bg-emerald-800"
+          >Contact me</a
+        >
+      </div>
     </header>
     <div class="h-20"></div>
     <section
@@ -177,7 +191,7 @@
       <h2 class="text-3xl font-[Kaisei_Tokumin] mb-8">Reviews</h2>
 
       <div class="grid grid-cols-1 md:grid-cols-2">
-        <div class="rounded shadow-xl p-12">
+        <div class="rounded shadow-lg p-12">
           <p class="uppercase tracking-widest font-light text-xs">
             InnoPeak CTO
           </p>
@@ -185,7 +199,21 @@
           <p>She is such a good Designer!! Would hire again.</p>
           <p>⭐⭐⭐⭐⭐</p>
         </div>
-        <div class="rounded shadow-xl p-12">
+        <div class="rounded shadow-lg p-12">
+          <p class="uppercase tracking-widest font-light text-xs">
+            InnoPeak CTO
+          </p>
+          <h3 class="font-bold text-emerald-900">RaviAnand Mohabir</h3>
+          <p>She is such a good Designer!! Would not hire again.</p>
+          <div class="flex gap-1 mt-2">
+            <i data-lucide="star"></i>
+            <i data-lucide="star"></i>
+            <i data-lucide="star"></i>
+            <i data-lucide="star"></i>
+            <i data-lucide="star"></i>
+          </div>
+        </div>
+        <div class="rounded shadow-lg p-12">
           <p class="uppercase tracking-widest font-light text-xs">
             InnoPeak CTO
           </p>
@@ -193,7 +221,7 @@
           <p>She is such a good Designer!! Would hire again.</p>
           <p>⭐⭐⭐⭐⭐</p>
         </div>
-        <div class="rounded shadow-xl p-12">
+        <div class="rounded shadow-lg p-12">
           <p class="uppercase tracking-widest font-light text-xs">
             InnoPeak CTO
           </p>
@@ -201,15 +229,7 @@
           <p>She is such a good Designer!! Would hire again.</p>
           <p>⭐⭐⭐⭐⭐</p>
         </div>
-        <div class="rounded shadow-xl p-12">
-          <p class="uppercase tracking-widest font-light text-xs">
-            InnoPeak CTO
-          </p>
-          <h3 class="font-bold text-emerald-900">RaviAnand Mohabir</h3>
-          <p>She is such a good Designer!! Would hire again.</p>
-          <p>⭐⭐⭐⭐⭐</p>
-        </div>
-        <div class="rounded shadow-xl p-12">
+        <div class="rounded shadow-lg p-12">
           <p class="uppercase tracking-widest font-light text-xs">
             InnoPeak CTO
           </p>
@@ -225,5 +245,13 @@
         with &lt;3 and attention to detail.
       </p>
     </footer>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+      lucide.createIcons();
+      const button = document.getElementById("color-mode-toggle");
+      button.addEventListener("click", function () {
+        document.body.classList.toggle("dark");
+      });
+    </script>
   </body>
 </html>

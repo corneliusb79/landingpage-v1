@@ -49,46 +49,72 @@
         harum molestias eligendi magni.
       </p>
     </section>
-    <section class="p-4" id="contact-form">
-      <form action="">
-        <label for="name"
-          >Name:
-          <br />
-          <input
-            type="text"
-            name="name"
-            id="name"
-            class="shadow rounded border border-emerald-700"
-          />
-        </label>
-        <br /><br />
-        <label for="email"
-          >E-Mail:
-          <br />
-          <input
-            type="email"
-            name="email"
-            id="email"
-            class="shadow rounded border border-emerald-700"
-          />
-        </label>
-        <br /><br />
-        <label for="message"
-          >Message:
-          <br />
-          <input
-            type="text"
-            name="message"
-            id="message"
-            class="shadow rounded border border-emerald-700"
-          />
-        </label>
-        <br /><br />
-        <button class="shadow rounded py-2 px-3 bg-emerald-700 text-amber-50">
-          Submit
-        </button>
-      </form>
-    </section>
+
+    <form id="contact-form" class="p-4" action="/contact">
+      <label for="name"
+        >Name:
+        <br />
+        <input
+          type="text"
+          name="name"
+          id="name"
+          class="shadow rounded border border-emerald-700"
+          required
+        />
+      </label>
+      <br /><br />
+      <label for="email"
+        >E-Mail:
+        <br />
+        <input
+          type="email"
+          name="email"
+          id="email"
+          class="shadow rounded border border-emerald-700"
+          required
+        />
+      </label>
+      <br /><br />
+      <label for="message"
+        >Message:
+        <br />
+        <input
+          type="text"
+          name="message"
+          id="message"
+          class="shadow rounded border border-emerald-700"
+          required
+        />
+      </label>
+      <br /><br />
+      <button
+        class="shadow rounded py-2 px-3 bg-emerald-700 text-amber-50"
+        type="submit"
+      >
+        Submit
+      </button>
+    </form>
+    <script>
+      const form = document.getElementById("contact-form");
+      console.log(form);
+      form.onsubmit = function (event) {
+        const name = document.getElementById("name").value;
+        console.log(name);
+        const email = document.getElementById("email").value;
+        console.log(email);
+        const message = document.getElementById("message").value;
+        console.log(message);
+      };
+
+      fetch("http://localhost:3000")
+        .then(function (res) {
+          return res.text();
+        })
+        .then(function (text) {
+          console.log(text);
+        });
+    </script>
+
     <footer class="bg-orange-100/50 p-16">
       <p class="container mx-auto">
         © 2025, Sushmita Mohabir. All rights reserved. Designed and developed
